@@ -513,6 +513,19 @@ RUN if [ ${INSTALL_UCHARDET} = true ]; then \
 ;fi
 
 ###########################################################################
+# zip:
+###########################################################################
+
+ARG INSTALL_ZIP=false
+
+RUN if [ ${INSTALL_ZIP} = true ]; then \
+    apt-get install -y zip && \
+    apt-get install -y libfontconfig1 libxrender1 && \
+    apt-get install -y fonts-wqy-microhei ttf-wqy-microhei fonts-wqy-zenhei ttf-wqy-zenhei && \
+    fc-cache -f -v \
+;fi
+
+###########################################################################
 # libfaketime:
 ###########################################################################
 

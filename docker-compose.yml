@@ -274,6 +274,7 @@ services:
           - INSTALL_CALENDAR=${PHP_FPM_INSTALL_CALENDAR}
           - INSTALL_FAKETIME=${PHP_FPM_INSTALL_FAKETIME}
           - INSTALL_UCHARDET=${PHP_FPM_INSTALL_UCHARDET}
+          - INSTALL_ZIP=${PHP_FPM_INSTALL_ZIP}
       volumes:
         - ./php-fpm-70/php${PHP_VERSION}.ini:/usr/local/etc/php/php.ini
         - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
