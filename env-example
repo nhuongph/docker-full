@@ -229,8 +229,8 @@ MARIADB_ENTRYPOINT_INITDB=./mariadb/docker-entrypoint-initdb.d
 
 ### POSTGRES ##############################################
 
-POSTGRES_VERSION_95=9.5-alpine
-POSTGRES_VERSION=9.6-alpine
+#POSTGRES_VERSION_95=12.4-alpine
+POSTGRES_VERSION=12.4-alpine
 POSTGRES_DB=enigma
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=none
